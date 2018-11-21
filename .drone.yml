@@ -9,7 +9,7 @@ steps:
 - name: test
   image: golang
   commands:
-  - go get
+  - go get ./...
   - go test ./...
   when:
     event:
